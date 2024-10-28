@@ -1,0 +1,25 @@
+{
+    "percentage": {
+        "class": "PercentageDiscount",
+        "description": "A discount that applies a percentage to the amount"
+    },
+    "fixed": {
+        "class": "FixedDiscount",
+        "description": "A fixed amount discount"
+    },
+    "bulk": {
+        "class": "BulkDiscount",
+        "description": "A discount applied for amounts over a certain threshold",
+        "parameters": {
+            "threshold": 15000,
+            "bulkDiscountAmount": 5000
+        }
+    },
+    "seasonal": {
+        "class": "SeasonalDiscount",
+        "description": "A seasonal discount applied as a percentage",
+        "parameters": {
+            "seasonalDiscount": 15
+        }
+    }
+}
